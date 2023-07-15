@@ -1,0 +1,21 @@
+Map<String, String> techStackImages = {
+  'Flutter': 'assets/icons/flutter.svg',
+  'Firebase': 'assets/icons/firebase.svg',
+  'Dart': 'assets/icons/dart.png',
+  'Java': 'assets/icons/java.png',
+  'Kotlin': 'assets/icons/kotlin.png',
+  'Flutter-Flow': 'assets/icons/flutterflow.png',
+  'REST-API': 'assets/icons/restapi.png',
+  'C': 'assets/icons/C.png',
+  'Git': 'assets/icons/git.png',
+  'AWS': 'assets/icons/aws.svg',
+
+  // 'NodeJS': 'assets/icons/node.svg',
+  // 'Python': 'assets/icons/python.svg',
+  // 'Docker': 'assets/icons/docker.svg',
+  // 'Typescript': 'assets/icons/ts.svg',
+  // 'Linux': 'assets/icons/linux.png',
+  // 'Go': 'assets/icons/go.png',
+  // 'Kubernetes': 'assets/icons/k8.svg',
+  // 'Tensorflow': 'assets/icons/tf.svg',
+};
