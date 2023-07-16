@@ -3,6 +3,8 @@ import 'package:lottie/lottie.dart';
 import 'package:saksham_portfolio/design/constants/app_images.dart';
 import 'package:saksham_portfolio/design/utils/app_colors.dart';
 import 'package:saksham_portfolio/design/widgets/buttons/app_outlined_button.dart';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
 
 class ProjectDesktopWidget extends StatefulWidget {
   const ProjectDesktopWidget({super.key});
@@ -52,39 +54,44 @@ class _ProjectDesktopWidgetState extends State<ProjectDesktopWidget> {
                 children: [
                   highlightContainer(
                       context,
-                      false,
+                      true,
                       'Weather App',
                       AppLottie.weather,
                       'A Weather forcasting app which shows temperature,humdity and other stuff with the appropriate city using Dart, Flutter & Rest api',
-                      'Code'),
+                      'Code',
+                      'https://github.com/sakshamgupta930/Mausam-App'),
                   highlightContainer(
                       context,
-                      false,
+                      true,
                       'Instagram Clone',
                       AppLottie.instagram,
                       "A Full stack Instagram Clone in which user can post and like and comment with the full authentication Using Flutter and Firebase",
-                      'Code'),
+                      'Code',
+                      'https://github.com/sakshamgupta930/Instagram-Clone'),
                   highlightContainer(
                       context,
-                      false,
+                      true,
                       'Food Recipe App',
                       AppLottie.foodrecipe,
                       'A Food Recipe App which shows recipes of food which you want using Dart, Flutter & Rest api',
-                      'Code'),
+                      'Code',
+                      'https://github.com/sakshamgupta930/Food-Recipe-App'),
                   highlightContainer(
                       context,
-                      false,
+                      true,
                       'Amazon Lite App',
                       AppLottie.amazon,
                       "A Full stack Amazon Clone is an eCommerce which the user can sell and buy the product using flutter, dart, firebase, cloud firestore",
-                      'Code'),
+                      'Code',
+                      'https://github.com/sakshamgupta930/Amazon-Clone'),
                   highlightContainer(
                       context,
-                      false,
+                      true,
                       'Wallpaper App',
                       AppLottie.wallpaper,
                       'A Wallpaper app which shows wallpapers fetching through pexels API want using Dart, Flutter & Rest api',
-                      'Code'),
+                      'Code',
+                      'https://github.com/sakshamgupta930/Wallpaper-App'),
                 ],
               )
             ],
@@ -95,7 +102,7 @@ class _ProjectDesktopWidgetState extends State<ProjectDesktopWidget> {
   }
 
   Widget highlightContainer(BuildContext context, bool showButton, String topic,
-      imagePath, text, buttonText) {
+      imagePath, text, buttonText, link) {
     double w = MediaQuery.of(context).size.width;
     return Container(
       width: w / 2.4,
@@ -131,9 +138,12 @@ class _ProjectDesktopWidgetState extends State<ProjectDesktopWidget> {
                 ),
                 if (showButton) const SizedBox(height: 10),
                 if (showButton)
-                  AppOutlinedButton(
-                    title: buttonText,
-                    textStyle: const TextStyle(fontSize: 12),
+                  Center(
+                    child: AppOutlinedButton(
+                      onTap: () => html.window.open(link, '_blank'),
+                      title: buttonText,
+                      textStyle: const TextStyle(fontSize: 15),
+                    ),
                   )
               ],
             ),
