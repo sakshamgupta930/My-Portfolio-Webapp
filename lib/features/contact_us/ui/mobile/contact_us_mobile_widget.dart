@@ -23,7 +23,7 @@ class ContactUsMobileWidget extends StatelessWidget {
               "If you are a student, developer or just want to chat with me, drop me an interesting mail at 👇"),
           const SizedBox(height: 8),
           Text(
-            'guptasaksham3071gmail.com',
+            'guptasaksham3071@gmail.com',
             style: TextStyle(color: AppColors.purple),
           ),
           const SizedBox(height: 20),

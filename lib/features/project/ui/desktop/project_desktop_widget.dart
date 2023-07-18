@@ -106,7 +106,6 @@ class _ProjectDesktopWidgetState extends State<ProjectDesktopWidget> {
     double w = MediaQuery.of(context).size.width;
     return Container(
       width: w / 2.4,
-      height: 260,
       padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
       decoration: BoxDecoration(
           color: AppColors.purpleDark.withOpacity(0.5),
@@ -133,7 +132,7 @@ class _ProjectDesktopWidgetState extends State<ProjectDesktopWidget> {
                 const SizedBox(height: 8),
                 Text(
                   text,
-                  maxLines: 4,
+                  maxLines: 6,
                   overflow: TextOverflow.ellipsis,
                 ),
                 if (showButton) const SizedBox(height: 10),
